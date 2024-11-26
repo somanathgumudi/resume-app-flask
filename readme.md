@@ -1,5 +1,6 @@
 # new system libraries
 sudo apt install python3-venv
+$sudo apt install gitk 
 
 # new system setup ssh-key
 - Generate ssh key
@@ -29,7 +30,7 @@ pip install -r requirements.txt
 source venv/bin/activate
 
 
-git status
+git status  or gitk
 git add app.py or git add --all
 git status
 git commit -m "flask app"
