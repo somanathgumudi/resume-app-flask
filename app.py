@@ -3,9 +3,12 @@ from flask import Flask, jsonify, request
 app = Flask(__name__) 
 
 @app.route('/hello', methods=['GET']) 
-def helloworld(): 
-    data = {"name": "Hello Somnath"}
-    return jsonify(data) 
+def hello_user(): 
+    json_data = {
+        "name": "Hello Somnath",
+        "email": "somanathg238@gmail.com"
+    }
+    return jsonify(json_data) 
 
 
 if __name__ == '__main__': 
